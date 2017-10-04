@@ -1,0 +1,5 @@
+{
+  "serviceAccountEmail": "{{serviceAccountEmail}}",
+  "projectId": "{{projectId}}",
+  "privateKey": "{{privateKey}}"
+}

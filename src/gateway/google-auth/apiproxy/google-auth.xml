@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="google-auth">
+    <Basepaths>/token</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1507064263903</CreatedAt>
+    <CreatedBy>rmahalank@apigee.com</CreatedBy>
+    <Description>google-auth</Description>
+    <DisplayName>google-auth</DisplayName>
+    <LastModifiedAt>1507064263903</LastModifiedAt>
+    <LastModifiedBy>rmahalank@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>Assign-Access-Token-to-Response</Policy>
+        <Policy>Extract-Variables-Access-Token-Payload</Policy>
+        <Policy>Lookup-Cache-Access-Token</Policy>
+        <Policy>Populate-Cache-Access-Token</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>node://app.js</Resource>
+        <Resource>node://node_modules.zip</Resource>
+        <Resource>node://package.json</Resource>
+        <Resource>node://personal_key.json</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+        <TargetEndpoint>no_target</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

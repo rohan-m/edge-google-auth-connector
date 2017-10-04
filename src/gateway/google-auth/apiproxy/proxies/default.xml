@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Lookup-Cache-Access-Token</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>Assign-Access-Token-to-Response</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <Flows/>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/token</BasePath>
+        <Properties/>
+        <VirtualHost>secure</VirtualHost>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+        <Condition>accesstoken == null</Condition>
+    </RouteRule>
+    <RouteRule name="no_target">
+        <Condition>accesstoken != null</Condition>
+    </RouteRule>
+</ProxyEndpoint>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache async="false" continueOnError="false" enabled="true" name="Lookup-Cache-Access-Token">
+    <DisplayName>Lookup Cache Access Token</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <Prefix/>
+        <KeyFragment>access_token</KeyFragment>
+    </CacheKey>
+    <CacheResource>access-token</CacheResource>
+    <Scope>Global</Scope>
+    <AssignTo>accesstoken</AssignTo>
+</LookupCache>
