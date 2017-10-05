@@ -20,7 +20,7 @@ app.get("/", function (req, res, next) {
             console.log(err);
             res.send(err);
         }
-        tokens.project_id = key.project_id;
+        tokens.project_id = key.projectId;
         res.send(tokens);
     });
 });
