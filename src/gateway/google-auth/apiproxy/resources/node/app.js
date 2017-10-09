@@ -49,7 +49,7 @@ module.exports = app;
 var google = require('googleapis');
 
 var scopes = [
-    'https://www.googleapis.com/auth/logging.write'
+    'https://www.googleapis.com/auth/cloud-platform'
 ];
 
 var key = require('./config.json');
