@@ -26,7 +26,11 @@ resources:
       baas_host: https://apibaas-trial.apigee.net
       edge_host: https://api.enterprise.apigee.com
       sms_endpoint: https://rest.nexmo.com/sms/json
-
+      
+    - env: dev
+      baas_host: https://apibaas-trial.apigee.net
+      edge_host: http://35.196.208.107:8080
+      
     - env : prod
       baas_host: https://apibaas-trial.apigee.net
       edge_host: https://api.enterprise.apigee.com
