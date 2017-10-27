@@ -22,7 +22,6 @@
     <HTTPProxyConnection>
         <BasePath>/token</BasePath>
         <Properties/>
-        <VirtualHost>secure</VirtualHost>
         <VirtualHost>default</VirtualHost>
     </HTTPProxyConnection>
     <RouteRule name="default">
